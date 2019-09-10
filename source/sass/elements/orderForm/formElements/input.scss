@@ -1,0 +1,158 @@
+.form-input {
+  position: relative;
+  width: 100%;
+
+  &--control {
+    padding-left: 62px;
+    padding-top: 10px;
+
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.06;
+  }
+}
+
+.form-input__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 40px;
+  height: 40px;
+  border: solid 2px $app-uncommon-text;
+}
+
+.form-input__text {
+  display: block;
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-bottom: solid 2px $form-item-border;
+
+  font-size: 17px;
+
+  &::placeholder {
+    color: $app-uncommon-text-opacity-30;
+  }
+}
+
+.form-input__textarea {
+  resize: none;
+  display: block;
+  width: 100%;
+  height: 142px;
+  margin-top: 17px;
+  border: solid 2px $form-item-border;
+  padding: 12px 0 0 13px;
+
+  font-size: 17px;
+
+  &::placeholder {
+    color: $app-uncommon-text-opacity-30;
+  }
+}
+
+.form-input__textarea,
+.form-input__text {
+  background-color: transparent;
+}
+
+.form-input__label {
+  display: block;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.06;
+}
+
+.form-input__icon {
+  position: absolute;
+  bottom: -11px;
+  right: 3px;
+
+  display: inline-block;
+  height: 52px;
+  width: 32px;
+
+  vertical-align: middle;
+}
+
+.icon-wrapper {
+  opacity: 0.2;
+
+  &:hover {
+    fill: $app-content-color;
+    opacity: 1;
+    pointer-events: bounding-box;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-input {
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+
+    &--control {
+      padding-left: 53px;
+      padding-top: 0;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .form-input__description {
+    padding-left: 28px;
+  }
+
+  .form-input__label {
+    margin-right: 24px;
+
+    font-size: 19px;
+    line-height: 0.95;
+
+    &--positioned {
+      position: absolute;
+      top: 18px;
+      left: -165px;
+    }
+  }
+
+  .form-input__text {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+    font-size: 19px;
+    padding-left: 18px;
+  }
+
+  .form-input__icon {
+    right: 40px;
+  }
+
+  .form-input__textarea {
+    margin: 0;
+    margin-right: 20px;
+
+    font-size: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-input__text {
+    margin-right: 187px;
+  }
+
+  .form-input__label--positioned {
+    left: -114px;
+  }
+
+  .form-input__icon {
+    right: 190px;
+  }
+
+  .form-input__textarea {
+    margin-right: 187px;
+  }
+}

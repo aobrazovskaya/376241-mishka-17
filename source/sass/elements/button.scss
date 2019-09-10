@@ -1,0 +1,115 @@
+.button {
+  border: solid 2px #444444;
+  padding: 20px 0;
+  flex-grow: 1;
+  text-align: center;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  color: $form-item-border;
+
+  background: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $content-bg-color;
+    background-color: $app-uncommon-text;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--offer {
+    padding: 16px 0;
+    line-height: 0.94;
+  }
+
+  &--order {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+
+    line-height: 1.18;
+  }
+
+  &--write-us {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    margin-top: 37px;
+    padding: 14px 0;
+
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  &--size-picker {
+    &:not(:last-child) {
+      margin-right: 2.1%;
+    }
+
+    padding: 17px 0;
+    border: 2px solid $app-uncommon-text-opacity-10;
+
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 0.94;
+
+    &:hover {
+      border-color: $app-uncommon-text-opacity-30;
+    }
+
+    &:active {
+      border-color: $app-content-color;
+    }
+  }
+
+  &--add-to-card {
+    width: 100%;
+    border: none;
+    padding: 17px 0;
+    outline: none;
+
+    color: $content-bg-color;
+    background-color: $app-content-color;
+
+    &:hover,
+    &:focus {
+      background-color: $app-content-darker;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--offer {
+      padding: 17px 0;
+    }
+
+    &--write-us {
+      order: 1;
+
+      margin: 0;
+      width: auto;
+      margin-left: auto;
+      padding: 14px 36px;
+      flex-grow: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    &--write-us {
+      margin-right: -23px;
+      margin-top: 13px;
+    }
+  }
+}

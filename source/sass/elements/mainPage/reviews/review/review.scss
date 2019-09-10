@@ -1,0 +1,40 @@
+.review-info {
+  margin-top: 25px;
+}
+
+.review-text {
+  font-size: 15px;
+  line-height: 2;
+}
+
+.reviewer {
+  margin-top: 26px;
+
+  font-size: 17px;
+  line-height: 1.41;
+}
+
+.reviewer__name {
+  margin-bottom: 7px;
+
+  display: block;
+  font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .review-info {
+    order: 2;
+    margin-top: 30px;
+
+    font-size: 18px;
+  }
+
+  .review-text {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .reviewer {
+    margin-top: 62px;
+  }
+}

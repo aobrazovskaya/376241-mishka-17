@@ -1,0 +1,151 @@
+.catalog__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.item__name {
+  h4 {
+    margin: 0;
+  }
+
+  font-size: 17px;
+  color: $form-item-border;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.info__wrapper {
+  padding: 27px 28px;
+  border: solid 1px $app-border-color;
+  display: flex;
+  flex-direction: column;
+}
+
+.item__description {
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 27px;
+
+  font-size: 13px;
+}
+
+.item__price {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px $app-border-color;
+}
+
+.item__price-value {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.item__price-icon {
+  display: inline-block;
+  vertical-align: middle;
+  height: 19px;
+  width: 20px;
+
+  opacity: 0.3;
+}
+
+.price__wrapper {
+  padding-top: 27px;
+}
+
+.item__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.catalog__item:hover,
+.catalog__item:focus {
+  .item__info {
+    box-shadow: 0 6px 10px 0 $box-shadow-10;
+  }
+}
+
+.catalog__item:active .item__info {
+  box-shadow: 0 3px 5px 0 $box-shadow-10;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__item {
+    flex-direction: row;
+    min-height: 334px;
+    margin-bottom: 54px;
+  }
+
+  .info__wrapper {
+    width: 50%;
+    min-width: 335px;
+    padding: 24px 27px 29px;
+  }
+
+  .item__image {
+    width: 50%;
+    height: auto;
+  }
+
+  .item__name {
+    font-size: 20px;
+  }
+
+  .item__description {
+    font-size: 15px;
+  }
+
+  .item__price {
+    margin-top: auto;
+    padding: 25px 5px 0;
+  }
+
+  .item__price-value {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item {
+    flex-direction: column;
+    width: 30%;
+    min-width: 316px;
+    flex-grow: 1;
+
+    &:not(:last-child) {
+      margin-right: 4.5%;
+    }
+  }
+
+  .info__wrapper {
+    min-width: auto;
+    width: auto;
+    flex-grow: 1;
+  }
+
+  .item__image {
+    width: auto;
+  }
+
+  .item__name {
+    font-size: 21px;
+  }
+
+  .item__description {
+    padding-bottom: 19px;
+  }
+
+  .item__price {
+    margin-top: auto;
+    padding: 23px 0 0;
+  }
+}

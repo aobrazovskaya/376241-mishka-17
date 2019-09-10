@@ -1,0 +1,36 @@
+@import "./feature/feature.scss";
+
+.our-features-header {
+  margin: 0;
+  padding: 0;
+
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.our-features-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .our-features-header {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .our-features-header {
+    font-size: 53px;
+    line-height: 1.08;
+    padding: 0 15%;
+  }
+
+  .our-features-list {
+    padding: 0 16%;
+  }
+}

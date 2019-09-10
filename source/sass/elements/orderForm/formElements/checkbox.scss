@@ -1,0 +1,35 @@
+.form-input__checkmark {
+  &--checkbox::after {
+    top: 9px;
+    left: 9px;
+
+    width: 20px;
+    height: 11px;
+  }
+}
+
+.form-input__checkbox:checked ~ .form-input__checkmark {
+  &::after {
+    content: "";
+    position: absolute;
+
+    border-bottom: solid 2px $app-uncommon-text;
+    border-left: solid 2px $app-uncommon-text;
+    transform: rotate(-45deg);
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .form-input__checkmark--checkbox {
+    width: 54px;
+
+    &::after {
+      top: 11px;
+      left: 10px;
+
+      width: 31px;
+      height: 17px;
+    }
+  }
+}

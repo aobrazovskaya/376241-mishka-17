@@ -1,0 +1,52 @@
+@import "./common.scss";
+@import "./normalize.scss";
+@import "./elements/navigation.scss";
+@import "./elements/mainPage/mainPage.scss";
+@import "./elements/footer.scss";
+@import "./elements/button.scss";
+@import "./elements/catalog/catalog.scss";
+@import "./elements/orderForm/orderForm.scss";
+
+@font-face {
+  font-weight: normal;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/opensans.woff") format("woff"),
+    url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/opensansbold.woff") format("woff"),
+    url("../fonts/opensansbold.woff2") format("woff2");
+}
+
+html {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  text-decoration: none;
+}

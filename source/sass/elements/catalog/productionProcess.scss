@@ -1,0 +1,146 @@
+.production-proccess {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px $app-border-color;
+  margin: 0 30px 58px;
+}
+
+.production-proccess__header {
+  display: flex;
+  order: -1;
+  margin: 0;
+  padding: 29px 34px 26px;
+
+  line-height: 1.41;
+  font-size: 17px;
+  font-weight: bold;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 49px;
+    height: 32px;
+    margin-right: 25px;
+
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.production-proccess__video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.production-proccess__video-img {
+  width: 100%;
+  height: 100%;
+}
+
+.production-proccess__video-icon {
+  position: absolute;
+  top: calc(50% - 46px);
+  left: calc(50% - 60.5px);
+
+  display: block;
+  width: 121px;
+  height: 92px;
+  border: none;
+  outline: none;
+
+  background: none;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 85%;
+
+  &:hover {
+    background-size: 100%;
+  }
+
+  &:active {
+    opacity: 0.5;
+    background-size: 65%;
+  }
+}
+
+.production-process__description {
+  padding: 25px 34px 0;
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.production-process__offer {
+  padding: 25px 34px 33px;
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .production-proccess {
+    margin: 0 50px;
+  }
+
+  .production-proccess__video {
+    order: -1;
+  }
+
+  .production-proccess__header {
+    order: 0;
+    padding: 34px 40px 0;
+
+    font-size: 20px;
+
+    &::before {
+      background-position: left;
+      margin-right: 15px;
+    }
+  }
+
+  .production-process__description {
+    padding: 30px 40px 10px;
+
+    font-size: 15px;
+  }
+
+  .production-process__offer {
+    padding: 25px 40px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production-proccess {
+    display: block;
+    overflow: auto;
+  }
+
+  .production-proccess__video {
+    float: left;
+    width: 65%;
+  }
+
+  .production-proccess__header {
+    flex-direction: column;
+    padding: 44px 57px 30px 80px;
+
+    &::before {
+      margin-bottom: 17px;
+    }
+  }
+
+  .production-process__description {
+    display: flex;
+    padding: 0 57px 42px 80px;
+
+    line-height: 2;
+  }
+
+  .production-process__offer {
+    padding: 0 57px 42px 80px;
+  }
+}
