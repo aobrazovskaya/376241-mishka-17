@@ -22,7 +22,7 @@
   }
 }
 
-.info__wrapper {
+.info-wrapper {
   padding: 27px 28px;
   border: solid 1px $app-border-color;
   display: flex;
@@ -57,7 +57,7 @@
   opacity: 0.3;
 }
 
-.price__wrapper {
+.price-wrapper {
   padding-top: 27px;
 }
 
@@ -85,7 +85,7 @@
     margin-bottom: 54px;
   }
 
-  .info__wrapper {
+  .info-wrapper {
     width: 50%;
     min-width: 335px;
     padding: 24px 27px 29px;
@@ -126,7 +126,7 @@
     }
   }
 
-  .info__wrapper {
+  .info-wrapper {
     min-width: auto;
     width: auto;
     flex-grow: 1;

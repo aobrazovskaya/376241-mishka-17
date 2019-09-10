@@ -33,7 +33,7 @@
   }
 }
 
-.features__header {
+.features-header {
   min-height: 283px;
   padding: 70px 38px;
   margin: 0;
@@ -93,7 +93,7 @@
 
     &::after {
       margin-right: 8px;
-      width: 40px;
+      width: 48px;
       height: 62px;
       background-image: url("../img/icon-interior.svg");
     }
@@ -121,7 +121,7 @@
     }
   }
 
-  .features__header {
+  .features-header {
     position: relative;
 
     width: 100%;
@@ -203,7 +203,7 @@
     }
   }
 
-  .features__header {
+  .features-header {
     font-size: 53px;
 
     background-image: url("../img/hero-desktop@1x.jpg");

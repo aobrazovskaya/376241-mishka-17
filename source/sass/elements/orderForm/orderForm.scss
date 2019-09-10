@@ -6,7 +6,7 @@
   margin-bottom: 54px;
 }
 
-.form__header {
+.form-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-.form__welcome {
+.form-welcome {
   margin: 0;
   padding: 22px 30px;
 
@@ -146,7 +146,7 @@
     margin-bottom: 51px;
   }
 
-  .form__header {
+  .form-header {
     position: relative;
 
     padding-top: 14px;
@@ -174,7 +174,7 @@
     background-color: $app-background;
   }
 
-  .form__welcome {
+  .form-welcome {
     margin: 0;
     padding: 0 50px;
 
@@ -269,7 +269,7 @@
     margin-bottom: 51px;
   }
 
-  .form__header {
+  .form-header {
     height: 250px;
     padding-top: 0;
 
@@ -277,7 +277,7 @@
     line-height: 1.08;
   }
 
-  .form__welcome {
+  .form-welcome {
     padding: 55px 225px 0 225px;
   }
 

@@ -39,7 +39,7 @@
       </ul>
       <ul class="navigation__menu user-menu">
         <li class="navigation__item user-menu__item user-menu__item--search">
-          <a class="navigation__link active-link  " href="search.html">
+          <a class="navigation__link active-link" href="search.html" aria-label="Search">
             <i class="navigation__link-icon">
               <svg class="logo-wrapper" width="18" height="18">
                 <use xlink:href="#icon-search"></use>
@@ -49,7 +49,7 @@
           </a>
         </li>
         <li class="navigation__item user-menu__item user-menu__item--cart">
-          <a class="navigation__link active-link" href="basket.html">
+          <a class="navigation__link active-link" href="basket.html" aria-label="Open basket">
             <i class="navigation__link-icon">
               <svg class="logo-wrapper" width="21" height="19" >
                 <use xlink:href="#icon-cart"></use>
@@ -76,7 +76,7 @@
       <section class="catalog">
         <h2 class="catalog__header">Каталог товаров</h2>
         <ul class="catalog__list">
-          <li class="catalog__item">
+          <li class="catalog__item item">
             <a class="item__image" href="order.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
@@ -88,14 +88,14 @@
                 <img alt="Зайчик-попрыгайчик" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x">
               </picture>
             </a>
-            <div class="item__info info__wrapper">
+            <div class="item__info info-wrapper">
               <a class="item__name" href="order.html">
                 <h4>Зайчик-попрыгайчик</h4>
               </a>
               <p class="item__description">Рост 30 см, вес 200 г</p>
-              <div class="item__price price__wrapper">
+              <div class="item__price  price-wrapper">
                 <span class="item__price-value">1 200 руб.</span>
-                <a href="order.html" class="item__price-icon active-link">
+                <a href="order.html" class="item__price-icon active-link" aria-label="Order bunny">
                     <svg class="logo-wrapper" width="20" height="20">
                       <use xlink:href="#icon-cart"></use>
                     </svg>
@@ -103,7 +103,7 @@
               </div>
             </div>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item item">
             <a class="item__image" href="order.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
@@ -115,14 +115,14 @@
                 <img alt="Зайчик-попрыгайчик" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x">
               </picture>
             </a>
-            <div class="item__info info__wrapper">
+            <div class="item__info info-wrapper">
               <a class="item__name" href="order.html">
                 <h4 class="item__name">Корзинка для белья</h4>
               </a>
               <p class="item__description">Диаметр 15 см, высота 10 см</p>
-              <div class="item__price price__wrapper">
+              <div class="item__price  price-wrapper">
                 <span class="item__price-value">690 руб.</span>
-                <a href="order.html" class="item__price-icon active-link">
+                <a href="order.html" class="item__price-icon active-link" aria-label="Order laudry basket">
                     <svg class="logo-wrapper" width="20" height="20">
                       <use xlink:href="#icon-cart"></use>
                     </svg>
@@ -130,7 +130,7 @@
               </div>
             </div>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item item">
             <a class="item__image" href="order.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
@@ -142,7 +142,7 @@
                 <img alt="Зайчик-попрыгайчик" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x">
               </picture>
             </a>
-            <div class="item__info info__wrapper">
+            <div class="item__info info-wrapper">
               <a class="item__name" href="order.html">
                 <h4 class="item__name">
                   Большая корзинка <br>
@@ -150,9 +150,9 @@
                 </h4>
               </a>
               <p class="item__description">Диаметр 30 см, высота 30 см</p>
-              <div class="item__price price__wrapper">
+              <div class="item__price  price-wrapper">
                 <span class="item__price-value">1 500 руб.</span>
-                <a href="order.html" class="item__price-icon active-link">
+                <a href="order.html" class="item__price-icon active-link" aria-label="Order toys basket">
                   <svg class="logo-wrapper" width="20" height="20">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -162,8 +162,8 @@
           </li>
         </ul>
       </section>
-      <section class="production-proccess">
-        <div class="production-proccess__video">
+      <section class="production-process">
+        <div class="production-process__video item">
           <picture class="item__image">
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
@@ -171,11 +171,11 @@
 
             <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-            <img alt="Production Video" class="production-proccess__video-img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x">
+            <img alt="Production Video" class="production-process__video-img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x">
           </picture>
-          <button class="production-proccess__video-icon"></button>
+          <button class="production-process__video-icon" aria-label="Play production video"></button>
         </div>
-        <h3 class="production-proccess__header">Процесс производства</h3>
+        <h3 class="production-process__header">Процесс производства</h3>
         <p class="production-process__description">
           По просьбам наших любимых фолловеров мы сняли для вас подробное
           видео о том, как появляются наши товары.
@@ -194,21 +194,21 @@
     </a>
     <ul class="social-networks">
         <li class="social-networks__item">
-            <a href="#" class="social-networks__item-link social-networks__item-link--instagram active-link">
+            <a href="#" class="social-networks__item-link social-networks__item-link--instagram active-link" aria-label="Instagram link">
               <svg class="logo-wrapper" width="23" height="22">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
         </li>
         <li class="social-networks__item">
-            <a href="#" class="social-networks__item-link social-networks__item-link--fb active-link">
+            <a href="#" class="social-networks__item-link social-networks__item-link--fb active-link" aria-label="Facebook link">
               <svg class="logo-wrapper" width="15" height="30">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
         </li>
         <li class="social-networks__item">
-            <a href="#" class="social-networks__item-link social-networks__item-link--twitter active-link">
+            <a href="#" class="social-networks__item-link social-networks__item-link--twitter active-link" aria-label="Twitter link">
               <svg class="logo-wrapper" width="25" height="23">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
@@ -216,7 +216,7 @@
         </li>
     </ul>
     <div class="developed-by">
-      <a class="developed-by__description active-link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="developed-by__description active-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Developed by HTML Academy">
         <span>Разработано</span>
         <span class="developed-by__logo">
           <svg class="logo-wrapper" height="44" width="39">
